@@ -8,6 +8,8 @@ import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
+import Login from './components/Login'
+
 class App extends Component {
   render(){
     return (
@@ -18,7 +20,8 @@ class App extends Component {
           <Route exact path="/" component = {ProductList}/>
           <Route path="/details" component = {Details}/>
           <Route path="/cart" component = {Cart}/>
-          <Route  component = {Default}/>
+          <Route path="/login" component = {Login}/> 
+          <Route component = {Default}/>
         </Switch>
       </React.Fragment>
      
