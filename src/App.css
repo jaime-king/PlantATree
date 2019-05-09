@@ -23,3 +23,37 @@ body{
 .text-bright{
   color: var(--lightBlue);
 }
+
+.btn-black-count {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.6rem !important;
+  color: black;
+  border: 0.05rem solid black !important;
+  border-radius: 0.1 !important;
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.6rem !important;
+  color: black;
+  border: 0.05rem solid black !important;
+  border-radius: 50% !important;
+}
+.btn-black-count:hover{
+  background: black !important;
+  color: white !important;
+
+}
+
+.btn-black:hover{
+  background: black !important;
+  color: white !important;
+
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1rem;
+  color: red;
+}

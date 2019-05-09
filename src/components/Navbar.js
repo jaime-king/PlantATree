@@ -47,4 +47,8 @@ const NavWrapper = styled.nav`
         font-size:1.3rem; 
         text-transform: capitalize ;
     }
+    .navbar-brand{
+        width:5.5rem;
+        height: 5.5rem;
+    }
 `
