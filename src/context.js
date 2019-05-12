@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {storeTrees,detailProduct} from './data';
 
 const ProductContext = React.createContext();
-
-
 
  class ProductProvider extends Component {
   
@@ -19,6 +17,7 @@ const ProductContext = React.createContext();
   componentDidMount(){
     this.setProducts();
   };
+
   setProducts = () => {
     let products = [];
     storeTrees.forEach(item => {
