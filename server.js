@@ -6,7 +6,6 @@ const port = process.env.PORT || 5000;  // Port for express backend
 
 app.use(express.static(path.join(__dirname, '/build')));
 
-
 app.get('/api/customers', (req, res) => {
 	console.log('Customers API called...');
 
@@ -18,6 +17,21 @@ app.get('/api/customers', (req, res) => {
 		{id: 4, firstName: 'Cindy', lastName: 'Cai'}
 	];
 	res.json(customers);
+});
+
+app.get('/api/specials', (req, res) => {
+
+    console.log('Trees spccials API called...' + req);
+
+    const specials = 
+    [
+        { productName: 'Oak Tree', productPrice: 5},
+        { productName: 'Willow Tree', productPrice: 17}
+    ];
+
+    console.log('Sending specials list...');
+    res.json(specials);
+    console.log('Sent specials list');
 });
 
 app.get('/api/trees', (req, res) => {
@@ -122,18 +136,11 @@ app.get('/api/trees', (req, res) => {
         total: 0
         }
     ];
-    
-    const customers = 
-    [
-        {id: 1, firstName: 'John', lastName: 'Doe'},
-        {id: 2, firstName: 'Matt', lastName: 'Ripia'},
-        {id: 3, firstName: 'Jaime', lastName: 'King'},
-        {id: 4, firstName: 'Cindy', lastName: 'Cai'}
-    ];  
+
     res.json(storeTrees);
 });
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname + '/build/index.html'));
 });
 
