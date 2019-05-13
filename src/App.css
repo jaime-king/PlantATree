@@ -9,6 +9,7 @@
 body{
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+  position: relative;
 }
 
 .text-title{
