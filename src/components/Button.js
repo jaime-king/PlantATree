@@ -13,8 +13,6 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
   width: ${props => (props.cartBtn ? "79.2px" : "")};
   margin-top: ${props => (props.cartBtn ? "0.5rem" : "")};
-  background-color: ${props => (props.loginBtn ? "#0062E6" : "transparent")};
-  color: ${props => (props.loginBtn ? "white" : "")}
   margin: 0.2rem 0.5rem 0.2rem 0;
   transition: all 0.5s ease-in-out;
   &:hover {
