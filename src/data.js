@@ -28,7 +28,7 @@ export const storeTrees = [
   {
     id: 3,
     title: "The Oak Tree",
-    img: "img/The-oak-tree.jpg",
+    img: "img/The-oak-tree.png",
     price: 8,
     height: 19,
     info:
@@ -40,7 +40,7 @@ export const storeTrees = [
   {
     id: 4,
     title: "Teak Tree",
-    img: "img/Teak-tree.jpg",
+    img: "img/Teak-tree.png",
     price: 18,
     height: 62,
     info:
@@ -87,8 +87,8 @@ export const storeTrees = [
   },
   {
     id: 8,
-    title: "Mahagony Tree",
-    img: "img/Mahagony.png",
+    title: "Mahogany Tree",
+    img: "img/Mahogany.png",
     price: 2,
     height: 23,
     info:
@@ -99,10 +99,34 @@ export const storeTrees = [
   },
   {
     id: 9,
-    title: "Tumeric Tree",
-    img: "img/Tumeric-tree.png",
+    title: "Eucalyptus Tree",
+    img: "img/Eucalyptus.png",
     price: 12,
     height: 30,
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 10,
+    title: "Mango Tree",
+    img: "img/Mango-tree.png",
+    price: 40,
+    height: 14,
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 11,
+    title: "Palm Tree",
+    img: "img/Palm-tree.png",
+    price: 55,
+    height: 25,
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,
@@ -123,3 +147,18 @@ export const detailProduct = {
   count: 0,
   total: 0
 };
+
+export const deliveryTypes = [
+{
+  id:1,
+  reigon:"Auckland",
+  price: 5,
+},
+{
+  id:2,
+  reigon:"Wellington",
+  price: 20,
+}
+]
+
+

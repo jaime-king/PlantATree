@@ -10,11 +10,12 @@ import Default from './components/Default';
 import Login from './components/Login';
 import CartWindow from './components/CartWindow';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 class App extends Component {
   render(){
     return (
-      <React.Fragment>
+      <React.Fragment> 
 
         <Navbar/>
         <Switch>
@@ -27,6 +28,10 @@ class App extends Component {
           <Route component = {Default}/>
         </Switch>
         <CartWindow />
+        <hr></hr>
+        <br></br>
+        <br></br>
+        <Footer />
       </React.Fragment>
     );
   }

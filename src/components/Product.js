@@ -68,6 +68,8 @@ const ProductWrapper = styled.div`
 .card{
   border-color:transparent;
   transition: all 0.5s linear;
+  background:  linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
+  border-radius:2rem;
 }
 .card-footer {
   background: transparent;
@@ -81,37 +83,39 @@ const ProductWrapper = styled.div`
     border:0.05rem solid black;
     box-shadow:2px 2px 5px 0px black;
   }
-  .card-footer{
-    background: white;
-    border:0.05rem solid black;
-    border-top:none;
-    color: black;
-  }
+  // .card-footer{
+  //   background: white;
+  //   border:0.05rem solid black;
+  //   border-top:none;
+  //   color: black;
+  // }
 
 }
 
 .img-container{
   position: relative;
   overflow:hidden;
+  height: 301.84px;
 }
 .card-img-top{
   transition: all 0.5s linear;
+  
    
 }
 .img-container:hover .card-img-top{
-  transform:scale(1.2);
+  transform:scale(1.3);
 }
 
 .cart-btn{
   position: absolute;
-  bottom:0;
-  right:0;
+  bottom:0.7rem;
+  right:0.5rem;
   padding: 0.2rem 0.4rem;
   background: transparent;
   border: 0.04rem solid green;
   color: green;
-  border-radius: 1rem 1rem 0 1rem;
-  // transform: translate(100%, 100%);
+  border-radius: 1rem 1rem 2rem 1rem;
+  
 }
 &:hover{
   .cart-btn{
