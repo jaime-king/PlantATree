@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react'
 
 export default function EmptyCart() {
   return (
     <div className="container mt-5">
-      <div className="row">
-        <div className="col-10 mx-auto text-center text-title">
-          <h2 className="cart-empty">
-            {" "}
-            Your cart is empty <i className="far fa-frown" />{" "}
-          </h2>
-        </div>
+     <div className="row">
+      <div className="col-10 mx-auto text-center text-title">
+       <h2> Your cart is empty <i class="far fa-frown"></i> </h2>
       </div>
+     </div>
+      
     </div>
-  );
+  )
 }

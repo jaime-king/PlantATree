@@ -23,7 +23,6 @@ class ProductProvider extends Component {
 		console.log("did mount: ");
 		console.log(this.state.products);
   }
-  
   setProducts = () => {
     let products = [];
     storeTrees.forEach(item => {
