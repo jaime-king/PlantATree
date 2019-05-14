@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import logo from "../logo.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-=======
-import React, { Component } from 'react'
-import logo from '../logo.svg'
-import styled from 'styled-components';
-import {Link} from 'react-router-dom';
->>>>>>> Items total price added
 
 export default class Footer extends Component {
   render() {
