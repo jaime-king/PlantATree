@@ -5,24 +5,51 @@ import styled from "styled-components";
 import { ButtonContainer } from "./Button";
 
 export default class Navbar extends Component {
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
   render() {
     return (
       <NavWrapper className=" navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
         {/* https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
-
+        <div className="menu-wrap">
+          <input type="checkbox" className="toggler" />
+          <div className="hamburger">
+            <div />
+          </div>
+          <div className="menu">
+            <div>
+              <div>
+                <ul>
+                  <Link to="/">
+                    <li> HOME </li>
+                  </Link>
+                  <Link to="/product">
+                    <li> TREES </li>
+                  </Link>
+                  <Link to="/login">
+                    <li> PROFILE </li>
+                  </Link>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <Link to="/">
-          <img src={logo} alt="store" className="navbar-brand" />
+          <img src={logo} alt="store" className="navbar-brand ml-5" />
         </Link>
 
-        <ul className="navbar-nav align-items-center">
+        {/* <ul className="navbar-nav align-items-center">
           <li className=" nav-item ml-3">
             <Link to="/" className="nav-link">
               products
             </Link>
           </li>
-        </ul>
+        </ul> */}
         <ul className="ml-auto">
           <li>
             <Link to="/login" className="ml-auto">
@@ -62,6 +89,7 @@ const NavWrapper = styled.nav`
     text-transform: capitalize;
   }
   .navbar-brand {
+    justify-content: center;
     width: 5.5rem;
     height: 5.5rem;
   }
