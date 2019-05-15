@@ -10,23 +10,27 @@ import Default from './components/Default';
 import Login from './components/Login';
 import CartWindow from './components/CartWindow';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 class App extends Component {
-  render(){
+  render() {
     return (
       <React.Fragment>
-
-        <Navbar/>
-        <Switch>
-          <Route exact path="/products" component = {ProductList}/>
-          <Route path="/details" component = {Details}/>
-          <Route path="/cart" component = {Cart}/>
-          <Route path="/login" component = {Login}/> 
-          <Route path="/" component = {Home}/> 
-          <Route path="/home" component = {Home}/>
-          <Route component = {Default}/>
-        </Switch>
+        <Navbar />
+          <Switch>
+            <Route exact path="/products" component = {ProductList}/>
+            <Route path="/details" component = {Details}/>
+            <Route path="/cart" component = {Cart}/>
+            <Route path="/login" component = {Login}/> 
+            <Route path="/" component = {Home}/> 
+            <Route path="/home" component = {Home}/>
+            <Route component = {Default}/>
+          </Switch>
         <CartWindow />
+        <hr />
+        <br />
+        <br />
+        <Footer />
       </React.Fragment>
     );
   }

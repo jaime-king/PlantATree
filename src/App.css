@@ -1,4 +1,4 @@
-:root{
+:root {
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
   --mainWhite: #f3f3f3;
@@ -6,28 +6,28 @@
   --mainYellow: #ffa400;
 }
 
-body{
+body {
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+  position: relative;
 }
 
-.text-title{
+.text-title {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
 .text-blue {
   color: var(--mainBlue);
-
 }
-.text-bright{
+.text-bright {
   color: var(--lightBlue);
 }
 
 .btn-black-count {
   background: transparent;
   text-transform: capitalize;
-  font-size: 0.6rem !important;
+  font-size: 1rem !important;
   color: black;
   border: 0.05rem solid black !important;
   border-radius: 0.1 !important;
@@ -35,25 +35,36 @@ body{
 .btn-black {
   background: transparent;
   text-transform: capitalize;
-  font-size: 0.6rem !important;
+  font-size: 1rem !important;
   color: black;
   border: 0.05rem solid black !important;
-  border-radius: 50% !important;
+  border-radius: 0 !important;
 }
-.btn-black-count:hover{
+.btn-black-count:hover {
   background: black !important;
   color: white !important;
-
 }
 
-.btn-black:hover{
+.btn-black:hover {
   background: black !important;
   color: white !important;
-
 }
 
-.cart-icon{
+.remove-icon {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: red;
+}
+.remove-icon:hover {
+  transform: scale(1.4);
+}
+.cart-bottom {
+  text-align: center;
+  /*justify-content: center;*/
+  justify-items: center;
+}
+
+.cart-empty {
+  text-align: center;
+  margin-bottom: 100%;
 }
