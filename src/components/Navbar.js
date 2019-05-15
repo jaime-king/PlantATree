@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";
+import { MenuButtons } from "./MenuButtons";
 
 export default class Navbar extends Component {
   handleClick() {
@@ -25,21 +26,30 @@ export default class Navbar extends Component {
             <div>
               <div>
                 <ul>
-                  <Link to="/">
-                    <li> HOME </li>
+                  <Link to="/home">
+                    <MenuButtons>HOME</MenuButtons>
                   </Link>
-                  <Link to="/product">
-                    <li> TREES </li>
+                  <Link to="/products">
+                    <MenuButtons>TREES STORE</MenuButtons>
+                  </Link>
+                  <Link to="/products">
+                    <MenuButtons>ADDITIONAL PRODUCTS</MenuButtons>
                   </Link>
                   <Link to="/login">
-                    <li> PROFILE </li>
+                    <MenuButtons>PROFILE</MenuButtons>
+                  </Link>
+                  <Link to="">
+                    <MenuButtons>ABOUT US</MenuButtons>
+                  </Link>
+                  <Link to="">
+                    <MenuButtons>CONTACT</MenuButtons>
                   </Link>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <Link to="/">
+        <Link to="/home">
           <img src={logo} alt="store" className="navbar-brand ml-5" />
         </Link>
 

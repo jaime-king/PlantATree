@@ -10,7 +10,7 @@ export default function ItemsTotal({ value, history }) {
       <div className="container">
         <div className="row">
           <div className="cart-bottom col-10 mt-5 col-sm-8 text-center align-items-center container-fluid">
-            <Link to="/">
+            <Link to="/products">
               <button
                 className="btn btn-outline-danger text-center text-uppercase mb-5 px-5"
                 type="button"
