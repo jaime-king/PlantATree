@@ -5,7 +5,7 @@
   --mainDark: #232528;
   --mainYellow: #ffa400;
   --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51, 0.85);
+  --overlay-color: linear-gradient(50deg, #f3c680, hsla(179, 54%, 76%, 0.5));
   --menu-speed: 0.75s;
 }
 
@@ -177,6 +177,7 @@ body {
   justify-content: center;
   transform: scale(0);
   transition: all 0.4s ease;
+  color: white !important;
 }
 
 .menu-wrap .menu > div > div {
@@ -190,11 +191,11 @@ body {
 
 .menu-wrap .menu > div > div > ul {
   list-style: none;
-  color: white;
+  color: white !important;
   font-size: 1.5rem;
   padding: 1rem;
 }
-.menu-wrap .menu > div > div > ul > link {
+.menu-wrap .menu:hover > div > div > ul {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
