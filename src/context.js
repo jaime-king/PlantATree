@@ -13,8 +13,15 @@ class ProductProvider extends Component {
     cartTotal: 0,
     deliveryCost: 0
   };
+  
   componentDidMount() {
-    this.setProducts();
+    //this.setProducts();
+    fetch('/api/trees')
+			.then(res =>res.json())
+			.then(products => this.setState({products}, () => console.log('products:', products)));
+
+		console.log("did mount: ");
+		console.log(this.state.products);
   }
   
   setProducts = () => {
