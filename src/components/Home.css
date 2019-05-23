@@ -2,3 +2,12 @@
     background-color: lightgrey
 }
 
+.alice-carousel__stage-item {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+}
+
