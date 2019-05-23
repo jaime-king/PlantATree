@@ -4,8 +4,8 @@ import HomeNews from './HomeNews';
 import './Home.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import image1 from './img/oak-tree1.png';
-import image2 from './img/Willow-tree.png';
+import image1 from '../img/oak-tree1.png';
+import image2 from '../img/Willow-tree.png';
 
 export default class Home extends Component {
 
@@ -13,7 +13,6 @@ export default class Home extends Component {
   {
     super();
   }
-
       render() {
         return (
           <React.Fragment>

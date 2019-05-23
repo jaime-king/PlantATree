@@ -13,7 +13,6 @@ img {
 
 .title{
     text-align: center;
-    background: url(./img/forest-bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,7 +25,6 @@ img {
 }
 
 .py-5{
-    background: url(./img/forest-bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
