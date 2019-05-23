@@ -55,6 +55,7 @@
   },
   "proxy": "http://localhost:5000/",
   "devDependencies": {
-    "react-alice-carousel": "^1.13.11"
+    "react-alice-carousel": "^1.13.11",
+    "supertest": "^4.0.2"
   }
 }
