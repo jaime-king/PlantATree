@@ -6,11 +6,17 @@
     "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
+    "mocha": "^6.1.4",
     "path": "^0.12.7",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-fancy-visa-card": "^1.0.1",
+    "react-item-select": "^1.0.2",
+    "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-select": "^2.4.3",
     "styled-components": "^4.2.0"
   },
   "scripts": {
@@ -19,7 +25,7 @@
     "start": "npm run build & node server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "mocha",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,5 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000/"
 }

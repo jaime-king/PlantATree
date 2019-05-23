@@ -26,7 +26,7 @@ export default class CartWindow extends Component {
                            <img src={img} className="img-fluid" alt="product" />
                            <h4> {title} </h4>
                            <h4 className="text-muted text-uppercase"> Price : $ {price} </h4>
-                           <h4 className="text-muted text-uppercase"> Height : {price} m</h4>
+                           <h4 className="text-muted text-uppercase"> Height : {height} m</h4>
                            <Link to='/'>
                             <ButtonContainer onClick = {() => closeModal()}> 
                                 Continue Shopping
