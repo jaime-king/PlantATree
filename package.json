@@ -10,6 +10,7 @@
     "path": "^0.12.7",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
+    "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.8.6",
     "react-fancy-visa-card": "^1.0.1",
     "react-item-select": "^1.0.2",
@@ -43,5 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "http://localhost:5000/",
+  "devDependencies": {
+    "react-alice-carousel": "^1.13.11"
+  }
 }
