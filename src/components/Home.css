@@ -1,5 +1,5 @@
 .text-center{
-    background-color: lightgrey
+    text-align: center;
 }
 
 .alice-carousel__stage-item {
@@ -11,3 +11,31 @@ img {
     height: 200px;
 }
 
+.title{
+    text-align: center;
+    background: url(./img/forest-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 30px;
+  
+}
+
+.py-5{
+    background: url(./img/forest-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+}
+
+.HomeNews{
+    color: white;
+}
