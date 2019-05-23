@@ -3,15 +3,21 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ProductProvider } from "./context";
+import { ProductProvider, ToolProvider, SoilProvider } from "./context";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <ProductProvider>
-    <Router>
-      <App />
-    </Router>
+    <SoilProvider>
+      <ToolProvider>
+        <Router>
+          <App />
+        </Router>
+      </ToolProvider>
+    </SoilProvider>
   </ProductProvider>,
+
   document.getElementById("root")
 );
 

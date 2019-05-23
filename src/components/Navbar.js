@@ -17,6 +17,7 @@ export default class Navbar extends Component {
         {/* https://www.iconfinder.com/icons/1243689/call_phone_icon
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
+
         <div className="menu-wrap">
           <input type="checkbox" className="toggler" />
           <div className="hamburger">
@@ -27,22 +28,34 @@ export default class Navbar extends Component {
               <div>
                 <ul>
                   <Link to="/home">
-                    <MenuButtons>HOME</MenuButtons>
+                    <MenuButtons>
+                      <i className="fas fa-home mr-5" />
+                      HOME
+                    </MenuButtons>
                   </Link>
-                  <Link to="/products">
-                    <MenuButtons>TREES STORE</MenuButtons>
-                  </Link>
-                  <Link to="/products">
-                    <MenuButtons>ADDITIONAL PRODUCTS</MenuButtons>
+                  <Link to="/store">
+                    <MenuButtons>
+                      <i className="fas fa-store mr-5" />
+                      STORE
+                    </MenuButtons>
                   </Link>
                   <Link to="/login">
-                    <MenuButtons>PROFILE</MenuButtons>
+                    <MenuButtons>
+                      <i className="fas fa-user mr-4" />
+                      PROFILE
+                    </MenuButtons>
                   </Link>
                   <Link to="">
-                    <MenuButtons>ABOUT US</MenuButtons>
+                    <MenuButtons>
+                      <i className="fas fa-info-circle mr-3" />
+                      ABOUT US
+                    </MenuButtons>
                   </Link>
-                  <Link to="">
-                    <MenuButtons>CONTACT</MenuButtons>
+                  <Link to="/contact-us">
+                    <MenuButtons>
+                      <i className="fas fa-envelope mr-4" />
+                      CONTACT US
+                    </MenuButtons>
                   </Link>
                 </ul>
               </div>
@@ -53,13 +66,6 @@ export default class Navbar extends Component {
           <img src={logo} alt="store" className="navbar-brand ml-5" />
         </Link>
 
-        {/* <ul className="navbar-nav align-items-center">
-          <li className=" nav-item ml-3">
-            <Link to="/" className="nav-link">
-              products
-            </Link>
-          </li>
-        </ul> */}
         <ul className="ml-auto">
           <li>
             <Link to="/login" className="ml-auto">

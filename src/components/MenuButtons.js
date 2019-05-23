@@ -8,10 +8,11 @@ export const MenuButtons = styled.button`
   box-shadow: 1px 1px 4px 0 black;
   background: linear-gradient(#3c4e59, #212326);
   color: white;
+  width: 100%;
   border-radius: 1rem;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
-  margin: 0.2rem 0.5rem 0.2rem 0;
+  margin: 0.8rem 0.9rem 0.2rem 0rem;
   transition: all 0.5s ease-in-out;
   &:hover {
     //background: black;
