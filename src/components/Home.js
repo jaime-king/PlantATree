@@ -8,11 +8,10 @@ import image1 from '../img/oak-tree1.png';
 import image2 from '../img/Willow-tree.png';
 
 export default class Home extends Component {
-
-  constructor(props) 
-  {
+  constructor(props) {
     super();
   }
+
       render() {
         return (
           <React.Fragment>

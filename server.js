@@ -1,57 +1,53 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 
-const port = process.env.PORT || 5000;  // Port for express backend
+const port = process.env.PORT || 5000; // Port for express backend
 
-app.use(express.static(path.join(__dirname, '/build')));
+app.use(express.static(path.join(__dirname, "/build")));
 
-app.get('/api/customers', (req, res) => {
-	console.log('Customers API called...');
+app.get("/api/customers", (req, res) => {
+  console.log("Customers API called...");
 
-	const customers = 
-	[
-        {id: 1, email: 'petertheponz@gmail.com', password: 'password'},
-        {id: 1, email: 'mattripia@gmail.com', password: 'password'},
-        {id: 1, email: 'jaimeking00@gmail.com', password: 'password'}
-    ];
-    
-	res.json(customers);
+  const customers = [
+    { id: 1, email: "petertheponz@gmail.com", password: "password" },
+    { id: 1, email: "mattripia@gmail.com", password: "password" },
+    { id: 1, email: "jaimeking00@gmail.com", password: "password" }
+  ];
+
+  res.json(customers);
 });
 
-app.get('/api/delivery-type', (req, res) => {
-	console.log('Delivery API called...');
+app.get("/api/delivery-type", (req, res) => {
+  console.log("Delivery API called...");
 
-	const deliveryTypes = 
-	[
-        {
-            id:1,
-            reigon:"Auckland",
-            price: 5,
-          },
-          {
-            id:2,
-            reigon:"Wellington",
-            price: 20,
-          }
-    ];
-    
-	res.json(deliveryTypes);
+  const deliveryTypes = [
+    {
+      id: 1,
+      reigon: "Auckland",
+      price: 5
+    },
+    {
+      id: 2,
+      reigon: "Wellington",
+      price: 20
+    }
+  ];
+
+  res.json(deliveryTypes);
 });
 
-app.get('/api/specials', (req, res) => {
+app.get("/api/specials", (req, res) => {
+  console.log("Trees spccials API called..." + req);
 
-    console.log('Trees spccials API called...' + req);
+  const specials = [
+    { productName: "Oak Tree", productPrice: 5 },
+    { productName: "Willow Tree", productPrice: 17 }
+  ];
 
-    const specials = 
-    [
-        { productName: 'Oak Tree', productPrice: 5},
-        { productName: 'Willow Tree', productPrice: 17}
-    ];
-
-    console.log('Sending specials list...');
-    res.json(specials);
-    console.log('Sent specials list');
+  console.log("Sending specials list...");
+  res.json(specials);
+  console.log("Sent specials list");
 });
 
 app.get('/api/trees', (req, res) => {
