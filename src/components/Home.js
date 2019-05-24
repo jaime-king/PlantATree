@@ -12,10 +12,6 @@ export default class Home extends Component {
     super();
   }
 
-  constructor(props) 
-  {
-    super();
-  }
       render() {
         return (
           <React.Fragment>
