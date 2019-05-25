@@ -23,7 +23,6 @@ class HomeSpecials extends Component {
   render() {
     return (
       <div>
-        {/* <SlidingHeader /> */}
         <br />
         <br />
         <h2>Specials</h2>

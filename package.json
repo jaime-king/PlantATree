@@ -10,10 +10,12 @@
     "faker": "^4.1.0",
     "mdbreact": "^4.14.0",
     "mobx": "^5.9.4",
+    "mocha": "^6.1.4",
     "path": "^0.12.7",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-alice-carousel": "^1.13.11",
+    "react-background-slideshow": "^1.0.4",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-fancy-visa-card": "^1.0.1",
@@ -25,7 +27,8 @@
     "react-search-field": "^1.0.0",
     "react-select": "^2.4.3",
     "semantic-ui-react": "^0.87.1",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "webpack": "^4.29.6"
   },
   "scripts": {
     "server": "node server.js",
@@ -33,7 +36,7 @@
     "start": "npm run build & node server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "mocha",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -51,5 +54,9 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "http://localhost:5000/",
+  "devDependencies": {
+    "react-alice-carousel": "^1.13.11",
+    "supertest": "^4.0.2"
+  }
 }

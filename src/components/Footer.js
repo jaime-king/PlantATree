@@ -7,21 +7,27 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper className="footer d-lg-none">
-        <Link to="/">
-          <span className="icons ml-5 mr-5">
-            <i className="fas fa-home" />
-          </span>
-        </Link>
-        <Link to="/cart">
-          <span className="icons ml-5 mr-5">
-            <i className="fas fa-shopping-cart" />
-          </span>
-        </Link>
-        <Link to="/login">
-          <span className="icons ml-5">
-            <i className="fas fa-user" />
-          </span>
-        </Link>
+        <div className="footer-icon">
+          <Link to="/">
+            <span className="icons ">
+              <i className="fas fa-home" />
+            </span>
+          </Link>
+        </div>
+        <div className="footer-icon">
+          <Link to="/cart">
+            <span className="icons ">
+              <i className="fas fa-shopping-cart" />
+            </span>
+          </Link>
+        </div>
+        <div className="footer-icon">
+          <Link to="/login">
+            <span className="icons ">
+              <i className="fas fa-user" />
+            </span>
+          </Link>
+        </div>
       </FooterWrapper>
     );
   }
@@ -36,17 +42,24 @@ const FooterWrapper = styled.nav`
   height: 4rem;
   width: 100%;
   margin-top: 5rem;
-
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   .footer {
-    text-align: center;
-    align-content: center;
     //padding-left: 3rem;
+  }
+
+  .footer-icon {
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .icons i {
     font-size: 30px;
     margin-top: 1.5rem;
-    //margin-right: 5rem;
+
     color: white;
+    float: none;
   }
 `;
