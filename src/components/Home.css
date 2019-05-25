@@ -1,39 +1,38 @@
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
 .alice-carousel__stage-item {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 img {
-    height: 200px;
+  height: 200px;
 }
 
-.title{
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    color: black;
-    font-size: 30px;
-  
+.title {
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  color: black;
+  font-size: 30px;
 }
 
-.py-5{
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    color: black;
+.py-5 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  color: black;
 }
 
-.HomeNews{
-    color: white;
+.HomeNews {
+  color: white;
 }

@@ -225,3 +225,52 @@ body {
   border-bottom: #232528 solid 0.05rem;
   box-shadow: 2px 2px 5px 0;
 }
+
+.news .card {
+  background-image: linear-gradient(50deg, #2f5373, #d9303e);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: #232528 2px 5px 9px 0;
+}
+
+.news i {
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.tips .card {
+  background-image: linear-gradient(50deg, #61c5b4, #6260a4);
+  color: #232528;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: #232528 2px 5px 9px 0;
+}
+
+.tips i {
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.tips a {
+  text-decoration: none;
+  color: #d9303e;
+}
+
+.specials .card {
+  background-image: linear-gradient(50deg, #96ccd9, #4bbfbf);
+
+  color: #232528;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: #232528 2px 5px 9px 0;
+  margin-bottom: 4rem;
+}
+
+.specials i {
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}

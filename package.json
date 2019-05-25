@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "carousel": "0.0.3",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",

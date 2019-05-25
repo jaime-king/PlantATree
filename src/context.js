@@ -216,7 +216,7 @@ class ToolProvider extends Component {
   state = {
     tools: [],
     detailTools: detailTools,
-    cart: [],
+    toolscart: [],
     modalOpen: false,
     modalTool: detailTools,
     cartTotal: 0,
