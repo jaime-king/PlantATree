@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PayPalButton from "./PayPalButton";
-import VisaPayment from "./VisaPayment";
+
 import DeliverySelect from "./DeliverySelect";
 export default function ItemsTotal({ value, history }) {
   const { cartTotal, clearCart } = value;
@@ -10,7 +10,18 @@ export default function ItemsTotal({ value, history }) {
       <div className="container">
         <div className="row">
           <div className="cart-bottom col-10 mt-5 col-sm-8 text-center align-items-center container-fluid">
-            <Link to="/">
+            <div className="continue-btn">
+              <Link to="/store">
+                <button
+                  className="btn btn-outline-blue text-center text-uppercase mb-5 px-5"
+                  type="button"
+                >
+                  {" "}
+                  Continue Shopping{" "}
+                </button>
+              </Link>
+            </div>
+            <Link to="/store">
               <button
                 className="btn btn-outline-danger text-center text-uppercase mb-5 px-5"
                 type="button"
@@ -41,7 +52,6 @@ export default function ItemsTotal({ value, history }) {
               history={history}
             />
             <hr />
-            {/* <VisaPayment /> */}
           </div>
         </div>
       </div>

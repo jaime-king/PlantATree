@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";
+import { MenuButtons } from "./MenuButtons";
 
 export default class Navbar extends Component {
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
   render() {
     return (
       <NavWrapper className=" navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
@@ -12,39 +18,76 @@ export default class Navbar extends Component {
                 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
 
-                <Link to= '/'>
-                 <img src={logo} alt="store" className="navbar-brand"/>
-                </Link>
-
-                <ul className="navbar-nav align-items-center">
-
-                    <li className=" nav-item ml-3">
-                    <Link to ="/home" className="nav-link">
-                      Home
-                    </Link>
-                    </li>
-
-                    <li className=" nav-item ml-3">
-                    <Link to ="/login" className="nav-link">
-                      login
-                    </Link>
-                    </li>
-
-                    <li className=" nav-item ml-3">
-                    <Link to ="/products" className="nav-link">
-                      products
-                    </Link>
-                    </li>
+        <div className="menu-wrap">
+          <input type="checkbox" className="toggler" />
+          <div className="hamburger">
+            <div />
+          </div>
+          <div className="menu">
+            <div>
+              <div>
+                <ul>
+                  <Link to="/home">
+                    <MenuButtons>
+                      <i className="fas fa-home mr-5" />
+                      HOME
+                    </MenuButtons>
+                  </Link>
+                  <Link to="/store">
+                    <MenuButtons>
+                      <i className="fas fa-store mr-5" />
+                      STORE
+                    </MenuButtons>
+                  </Link>
+                  <Link to="/login">
+                    <MenuButtons>
+                      <i className="fas fa-user mr-4" />
+                      PROFILE
+                    </MenuButtons>
+                  </Link>
+                  <Link to="">
+                    <MenuButtons>
+                      <i className="fas fa-info-circle mr-3" />
+                      ABOUT US
+                    </MenuButtons>
+                  </Link>
+                  <Link to="/contact-us">
+                    <MenuButtons>
+                      <i className="fas fa-envelope mr-4" />
+                      CONTACT US
+                    </MenuButtons>
+                  </Link>
                 </ul>
-                
-                <Link to= "/cart" className="ml-auto">
-                <ButtonContainer>
-                    <span className="mr-2">
-                    <i className="fas fa-cart-plus"/> 
-                    </span>
-                    My Cart
-                </ButtonContainer>
-                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Link to="/home">
+          <img src={logo} alt="store" className="navbar-brand ml-5" />
+        </Link>
+
+        <ul className="ml-auto">
+          <li>
+            <Link to="/login" className="ml-auto">
+              <ButtonContainer loginBtn>
+                <span className="mr-2">
+                  <i className="fas fa-user" />
+                </span>
+                Login
+              </ButtonContainer>
+            </Link>
+          </li>
+          <li>
+            <Link to="/cart" className="ml-auto">
+              <ButtonContainer cartBtn>
+                <span className="mr-2">
+                  <i className="fas fa-cart-plus" />
+                </span>
+                Cart
+              </ButtonContainer>
+            </Link>
+          </li>
+        </ul>
       </NavWrapper>
     );
   }
@@ -62,6 +105,7 @@ const NavWrapper = styled.nav`
     text-transform: capitalize;
   }
   .navbar-brand {
+    justify-content: center;
     width: 5.5rem;
     height: 5.5rem;
   }
