@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { ToolConsumer } from "../context";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./Button";
-import Options from "./Options";
 export default class Details extends Component {
   render() {
     return (

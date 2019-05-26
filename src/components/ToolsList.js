@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SearchField from "react-search-field";
 import { ToolConsumer } from "../context";
 import Tool from "./Tool";
 

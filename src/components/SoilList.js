@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import SearchField from "react-search-field";
 import { SoilConsumer } from "../context";
 import Soil from "./Soil";
-import SoilIcon from "../soils-icon.png";
+import SoilIcon from "../img/soils-icon.png";
 
 function searchingFor(term) {
   return function(x) {

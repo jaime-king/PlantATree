@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import soils from "../soils.jpg";
-import trees from "../trees.jpg";
-import tools from "../tools.jpg";
+import soils from "../img/soils.jpg";
+import trees from "../img/trees.jpg";
+import tools from "../img/tools.jpg";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 

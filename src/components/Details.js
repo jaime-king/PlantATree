@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { ProductConsumer } from "../context";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./Button";
-import Options from "./Options";
 export default class Details extends Component {
   render() {
     return (
@@ -52,8 +51,6 @@ export default class Details extends Component {
                   <h4>Select Your Preferences</h4>
                   <br />
                   <h5>HEIGHT:</h5>
-
-                  {/* <Options /> */}
 
                   <br />
                   <br />

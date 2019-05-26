@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Product from "./Product";
-import SearchField from "react-search-field";
 import { ProductConsumer } from "../context";
 
 function searchingFor(term) {
