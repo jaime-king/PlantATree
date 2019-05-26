@@ -2,29 +2,56 @@ import React, { Component } from "react";
 import SearchField from "react-search-field";
 import { SoilConsumer } from "../context";
 import Soil from "./Soil";
+import SoilIcon from "../soils-icon.png";
+
+function searchingFor(term) {
+  return function(x) {
+    return x.title.toLowerCase().includes(term.toLowerCase()) || !term;
+  };
+}
+
 export default class SoilList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.searchHandler = this.searchHandler.bind(this);
+  }
+  state = {
+    term: ""
+  };
+
+  searchHandler(event) {
+    this.setState({ term: event.target.value });
+  }
   render() {
     return (
       <React.Fragment>
         <div className="py-5">
           <div className="container">
-            <div className="col mb-4">
-              <SearchField
-                placeholder="Search..."
-                // onChange={this.updateSearch.bind(this)}
-                searchText="e.g. gloves"
-                classNames="search"
-              />
+            <div className="search-bar col mb-4">
+              <form>
+                <i className="fas fa-search" />
+                <input
+                  type="text"
+                  onChange={this.searchHandler}
+                  placeholder="Search by name"
+                />
+              </form>
             </div>
-            <h2 className="text-center"> Soils Store</h2>
+            <div className="shop text-center mt-5">
+              <img src={SoilIcon} />
+              <h2 className=""> SOILS STORE</h2>
+            </div>
             <div className="row">
               <SoilConsumer>
                 {/* this function is to call data in context.js */}
 
                 {value => {
-                  return value.soils.map(soil => {
-                    return <Soil key={soil.id} soil={soil} />;
-                  });
+                  return value.soils
+                    .filter(searchingFor(this.state.term))
+                    .map(soil => {
+                      return <Soil key={soil.id} soil={soil} />;
+                    });
                 }}
               </SoilConsumer>
             </div>
