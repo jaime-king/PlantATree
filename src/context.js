@@ -272,7 +272,7 @@ class ToolProvider extends Component {
     tool.total = price;
     this.setState(
       () => {
-        return { tools: tempTools, cart: [...this.state.cart, tool] };
+        return { tools: tempTools, toolscart: [...this.state.toolscart, tool] };
       },
       () => {
         this.addTotals();
@@ -298,7 +298,7 @@ class ToolProvider extends Component {
   // cart page methods
 
   increment = id => {
-    let tempCart = [...this.state.cart];
+    let tempCart = [...this.state.toolscart];
     const selectedItem = tempCart.find(item => item.id === id);
 
     const index = tempCart.indexOf(selectedItem);
@@ -309,7 +309,7 @@ class ToolProvider extends Component {
 
     this.setState(
       () => {
-        return { cart: [...tempCart] };
+        return { toolscart: [...tempCart] };
       },
       () => {
         this.addTotals();
@@ -318,7 +318,7 @@ class ToolProvider extends Component {
   };
 
   decrement = id => {
-    let tempCart = [...this.state.cart];
+    let tempCart = [...this.state.toolscart];
     const selectedItem = tempCart.find(item => item.id === id);
 
     const index = tempCart.indexOf(selectedItem);
@@ -336,7 +336,7 @@ class ToolProvider extends Component {
       tool.total = tool.count * tool.price;
       this.setState(
         () => {
-          return { cart: [...tempCart] };
+          return { toolscart: [...tempCart] };
         },
         () => {
           this.addTotals();
@@ -347,7 +347,7 @@ class ToolProvider extends Component {
 
   removeItem = id => {
     let tempProducts = [...this.state.tools];
-    let tempCart = [...this.state.cart];
+    let tempCart = [...this.state.toolscart];
 
     tempCart = tempCart.filter(item => item.id !== id);
 
@@ -360,7 +360,7 @@ class ToolProvider extends Component {
     this.setState(
       () => {
         return {
-          cart: [...tempCart],
+          toolscart: [...tempCart],
           tool: [...tempProducts]
         };
       },
@@ -373,7 +373,7 @@ class ToolProvider extends Component {
   clearCart = () => {
     this.setState(
       () => {
-        return { cart: [] };
+        return { toolscart: [] };
       },
       () => {
         this.setTools();
@@ -384,7 +384,7 @@ class ToolProvider extends Component {
 
   addTotals = () => {
     let carttotal = 0;
-    this.state.cart.map(item => (carttotal += item.total));
+    this.state.toolscart.map(item => (carttotal += item.total));
 
     this.setState(() => {
       return {

@@ -10,14 +10,11 @@ export default class Cart extends Component {
       <section>
         <ToolConsumer>
           {value => {
-            const { cart } = value;
+            const { toolscart } = value;
 
-            if (cart.length > 0) {
+            if (toolscart.length > 0) {
               return (
                 <React.Fragment>
-                  <h2 className="text-center mt-4 "> Your Cart </h2>
-                  <hr />
-                  <CartColumns />
                   <CartList value={value} />
                   <ItemsTotal value={value} history={this.props.history} />
                 </React.Fragment>
