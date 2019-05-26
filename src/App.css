@@ -166,8 +166,13 @@ body {
   justify-content: center;
 }
 .shop i {
-  font-size: 40px;
+  font-size: 60px;
 }
+.shop img {
+  width: 110px;
+  height: 70px;
+}
+
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   /* border-radius: 50%; */
@@ -273,4 +278,13 @@ body {
   text-align: center;
   justify-content: center;
   font-size: 40px;
+}
+
+.search-bar input {
+  padding-left: 1rem;
+  background: transparent;
+  border-bottom: 1rem soild #232528;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
